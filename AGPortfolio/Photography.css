@@ -1,0 +1,115 @@
+body {
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #101110;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'nav main'
+        'footer footer';
+    float: left;
+    width: 1440px;
+    height: 200px;
+}
+.main {
+    width: 1450px;
+    height: 900px;
+    }
+
+.menu {
+    grid-area: nav;
+    width: 240px;
+    height: 1000px;
+    border: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: black;
+    text-align: left;
+  font-family: .bricolage-grotesque;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: .5cm;
+  font-weight: normal;
+  font-style: normal;
+    line-height: 2;
+    color: black;
+    background-color: black;
+}
+
+.main {
+    grid-area: main;
+    width: 1350px;
+    height: 800px;
+    float: center;
+    margin-left: 250px;
+    margin-top: -600px
+ 
+    
+}
+    
+.container {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    display: inline-block;
+    float: left;
+}
+
+body {
+    margin:  0;
+}
+
+.footer {
+    grid-area: footer;
+    height: 100px;
+    width:1800px;
+    background-color: black;
+    color: #e13f26;
+    text-align: center;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 200;
+    margin-top: 50px;
+    float: left;
+}
+
+ul {list-style-type: none;
+    margin-left: -40px;
+    color: white;
+}
+li {opacity: 1;}
+
+li.active {font-weight: 400;
+    opacity: 1;}
+
+li:hover {opacity: 1;}
+.container:hover .overlay,.container:hover .overlayFade {
+    opacity: 40%;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+      font-family: "Bricolage Grotesque", sans-serif;
+    opacity: 1;
+}
+.overlayFade{
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: #e13f26;
+}
+.overlay {
+    position: absolute;
+    opacity: 0;
+    transition:all .3s ease;
+    background-color: #e13f26;
+}
+.container:hover .overlay,.container:hover .overlayFade {
+    opacity: 40%;
+}
+
